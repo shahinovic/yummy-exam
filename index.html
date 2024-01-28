@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/modules/dom.module.js" type="module" defer></script>
+    <script src="js/script.js" type="module" defer></script>
+    <title>Yummy</title>
+  </head>
+  <body>
+    <div
+      class="loader-layer vh-100 d-flex justify-content-center align-items-center bg-dark fixed-top"
+    >
+      <div class="loader"></div>
+    </div>
+    <nav class="navbar">
+      <div class="toggle-part">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <div class="toggle-btn">
+          <button class="btn open-btn active-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+          <button class="btn close-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="share">
+          <button class="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-globe"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+              />
+            </svg>
+          </button>
+          <button class="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-share-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="overflow-hidden h-100 d-flex flex-column justify-content-between"
+      >
+        <ul>
+          <li><a href="#" id="search-btn">Search</a></li>
+          <li><a href="#" id="categories-btn">Categories</a></li>
+          <li><a href="#" id="area-btn">Area</a></li>
+          <li><a href="#" id="ingredients-btn">Ingredients</a></li>
+          <li><a href="#" id="contact-btn">Contact Us</a></li>
+        </ul>
+        <div class="nav-footer">
+          <div class="social-links">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                /></svg
+            ></a>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                /></svg
+            ></a>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-globe"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+                /></svg
+            ></a>
+          </div>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </nav>
+    <section class="render-content p-5">
+      <div class="container-fluid">
+        <div class="search row g-4 mb-4">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control text-bg-dark"
+                id="searchByName"
+                placeholder="Search by Name"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control text-bg-dark"
+                id="searchByFirstLitter"
+                placeholder="Search by First Litter"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row g-4" id="render-element"></div>
+      </div>
+    </section>
+    <section class="render-details p-5">
+      <div class="container-fluid">
+        <div class="row"></div>
+      </div>
+    </section>
+    <section id="contact-us" class="vh-100">
+      <!-- <div class="container w-75 text-center">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <input
+              id="nameInput"
+              onkeyup="inputsValidation()"
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Name"
+            />
+            <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+              Special characters and numbers not allowed
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="emailInput"
+              onkeyup="inputsValidation()"
+              type="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+            />
+            <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+              Email not valid *exemple@yyy.zzz
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="phoneInput"
+              onkeyup="inputsValidation()"
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Phone"
+            />
+            <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+              Enter valid Phone Number
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="ageInput"
+              onkeyup="inputsValidation()"
+              type="number"
+              class="form-control"
+              placeholder="Enter Your Age"
+            />
+            <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+              Enter valid age
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="passwordInput"
+              onkeyup="inputsValidation()"
+              type="password"
+              class="form-control"
+              placeholder="Enter Your Password"
+            />
+            <div
+              id="passwordAlert"
+              class="alert alert-danger w-100 mt-2 d-none"
+            >
+              Enter valid password *Minimum eight characters, at least one
+              letter and one number:*
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="repasswordInput"
+              onkeyup="inputsValidation()"
+              type="password"
+              class="form-control"
+              placeholder="Repassword"
+            />
+            <div
+              id="repasswordAlert"
+              class="alert alert-danger w-100 mt-2 d-none"
+            >
+              Enter valid repassword
+            </div>
+          </div>
+        </div>
+        <button
+          id="submitBtn"
+          disabled=""
+          class="btn btn-outline-danger px-2 mt-3"
+        >
+          Submit
+        </button>
+      </div> -->
+    </section>
+  </body>
+</html>
